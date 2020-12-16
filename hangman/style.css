@@ -1,0 +1,78 @@
+body {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    background-image: url(media/hangman-background.svg);
+    background-size: cover;
+    margin: 0;
+}
+
+#title {
+    font-size: 4vw;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.play-area * {
+    font-family: "Roboto Mono", monospace;
+    font-size: 12vw;
+    font-weight: 900;
+    letter-spacing: 4vw;
+    margin: 1.2vw 0px;
+}
+
+#word {
+    position: relative;
+}
+
+#length-lines {
+    position: absolute;
+    left: 0;
+    top: 8.8vw;
+    width: 100%;
+}
+
+#keyboard {
+    margin: 4vw 0 1vw 0;
+    background-color:#CA4444;
+    height: 15vw;
+    padding: 0.4vw 0;
+}
+
+#keyboard button {
+    font-size: 4vw;
+    color: white;
+    border: 0.5vw solid #CA4444;
+    background-color: #D25F5F;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+    width: 7.5vw;
+    height: 7.5vw;
+    outline: none;
+}
+
+#keyboard button:enabled:hover, #keyboard button:enabled:focus {
+    background-color: #D57575;
+    font-size: 5vw;
+}
+
+#keyboard button:disabled {
+    border: 0.5vw solid #5B5B5B;
+    background-color: #919191;
+}
+
+#keyboard p {
+    font-size: 6.4vw;
+    vertical-align: middle;
+    padding: 4vw;
+    margin: 0;
+}
+
+#hearts img {
+    width: 12vw;
+    height: auto;
+    margin: 0 0.8vw;
+}
+
