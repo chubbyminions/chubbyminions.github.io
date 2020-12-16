@@ -23,7 +23,8 @@ lengthLines.textContent = "_".repeat(wordLength);
 
 keyboard.addEventListener("click", keyClick => {
     const target = keyClick.target;
-    const clickedLetter = target.id;
+    if (target.nodeName === "BUTTON") {
+        const clickedLetter = target.id;
     target.blur();
     target.setAttribute("disabled", "");
     let beforeGuessed = guessed;
@@ -44,6 +45,7 @@ keyboard.addEventListener("click", keyClick => {
             guessText.textContent = word;
             guessText.style.color = "#CA4444"
         }
+    }
     }
 });
 
