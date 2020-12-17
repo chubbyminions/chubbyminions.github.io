@@ -12,7 +12,7 @@ for (c of alpha) {
 let lives = 7;
 hearts.innerHTML = "<img src=\"media/heart.svg\" alt=\"Heart\">".repeat(7);
 
-words = words.filter(w => w.length < 11);
+words = words.filter(w => w.length < 10);
 const word = words[Math.floor(Math.random() * words.length)];
 const wordLength = word.length;
 
