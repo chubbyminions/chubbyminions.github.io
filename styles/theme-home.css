@@ -1,0 +1,56 @@
+html {
+    background-color: #242328;
+    background-attachment: fixed;
+}
+
+h1, h2, h3, p, .subject-title, .subject-description {
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    font-size: 3vw;
+    font-weight: 900;
+    text-align: center;
+    margin: 10px 0;
+}
+
+html, body, main, #subjects {
+    height: 100%;
+}
+
+#subjects {
+    margin: 0 15vw;
+}
+
+.subject-box {
+    background-color: #3f3d46;
+    width: 20vw;
+    height: 12vw;
+    overflow: auto;
+}
+
+.subject-image {
+    width: 75%;
+    height: 75%;
+}
+
+.subject-title {
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/*
+COLOURS:
+black - #242328
+white - #ffffff
+lime - #40ea65
+yellow - #fee741
+red - #ff3b5f
+orange - #ff7c34
+lightblue - #3feada
+purple - #5d35b0 
+darkblue - #407fca
+*/
