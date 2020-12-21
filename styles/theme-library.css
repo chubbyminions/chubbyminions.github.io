@@ -1,10 +1,11 @@
-/* Website CSS */
+/* Title CSS */
 
 body {
+    width: 100%;
     margin: 0;
 }
 
-h1, p, .book-title, .book-author {
+h1, li, a, p, .book-category, .book-title, .book-author {
     font-family: "Roboto", sans-serif;
 }
 
@@ -25,24 +26,67 @@ h1 {
     box-sizing: border-box;
 }
 
+/* Nav CSS */
+
+nav ul {
+    list-style-type: none;
+    background-color: #242328;
+    border-top: 3px solid #36353a;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: white;
+    padding: 18px 22px;
+    text-decoration: none;
+    line-height: 16px;
+}
+
+nav a.active {
+    color: #000000;
+    background-color: #f5e050;
+}
+
+nav a:hover:not(.active) {
+    font-size: 18px;
+    background-color: #161518;
+}
+
 /* Book CSS */
 
-.book-catalogue {
-    padding: 20px;
+
+.book-category {
+    color: #000000;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    clear: both;
 }
 
 .book-listing {
     padding: 20px;
-    width: 24.99999%;
+    width: 25%;
+    height: auto;
     float: left;
 }
 
 .book-img {
     width: 100%;
-    height: auto;
+    transition: 0.3s ease-in-out;
 }
 
-.book-title {
+.book-img:hover {
+    filter: saturate(200%)
+}
+
+.book-title { 
     font-weight: 500;
     text-align: center;
     width: 100%;
@@ -53,15 +97,15 @@ h1 {
     text-align: center;
 }
 
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
+@media only screen and (max-width: 1000px) {
+    .book-listing {
+        width: 33.333%;
+    }
 }
 
 @media only screen and (max-width: 800px) {
     .book-listing {
-        width: 49.99999%;
+        width: 50%;
     }
 }
 
