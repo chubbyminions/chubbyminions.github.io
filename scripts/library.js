@@ -17,16 +17,20 @@ const books = { //Books[Subject][Category][Book]
             "The English Opening Vol 1 - Mihail Marin.pdf",
             "The English Opening Vol 2 - Mihail Marin.pdf",
             "The English Opening Vol 3 - Mihail Marin.pdf",
+            "The Most Flexible Sicilian - Alexander Delchev.pdf",
             "The Sicilian Taimanov - Antonios Pavlidis.pdf"
         ],
         Strategy: [
             "Better Thinking, Better Chess - Joel Benjamin.pdf",
             "Beyond Material - Davorin Kuljasevic.pdf",
             "Move First, Think Later - Willy Hendriks.pdf",
+            "On the Origin of Good Moves - Willy Hendriks.pdf",
             "Reassess Your Chess - Jeremy Silman.pdf",
+            "Recognizing Your Opponent's Resources - Mark Dvoretsky.pdf",
             "Small Steps to Giant Improvement - Sam Shankland.pdf",
             "Strategic Chess Exercises - Emmanuel Bricard.pdf",
             "The Chess Toolbox - Thomas Willemze.pdf",
+            'The Complete Chess Swindler - David Smerdon.pdf',
             "The Shereshevsky Method - Mikhail Shereshevsky.pdf",
             "Under the Surface - Jan Markos.pdf",
             "Zlotnik's Middlegame Manual - Boris Zlotnik.pdf"
@@ -56,3 +60,8 @@ Object.entries(books[subject]).map(category => {
         catalogue.innerHTML += '<div class="book-listing"><a href="/media/library/books/' + pdfPath + '" target="_blank"><img src="/media/library/covers/' + imgPath + '" alt="' + path + '" class="book-img"></a><div class="book-title">' + title + '</div><div class="book-author">' + author +'</div></div>';
     })
 })
+
+// const fs = require("fs");
+// fs.readdir("./../media/library/books", (err, files) => {
+//     console.log(files);
+// })
